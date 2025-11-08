@@ -1,0 +1,136 @@
+/* Container for the 3D perspective */
+.clock-stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  width: 100%;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #1e284a 0%, #080d17 100%);
+}
+
+/* Main clock container where the tilt effect is applied */
+.clock-container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.7);
+}
+
+/* Metallic Bezel (The outer ring) */
+.clock-bezel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #a8c1e8, #7a98c7, #a8c1e8, #7a98c7);
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.5), 
+              0 0 50px rgba(74, 119, 255, 0.5);
+  z-index: 1;
+}
+
+/* Clock Face: Inner dark circle */
+.clock-face {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #001f3f 0%, #000a1a 100%);
+  overflow: hidden;
+  z-index: 2;
+  transform-style: preserve-3d; 
+}
+
+/* Simulating the inner radiating texture/light */
+.inner-texture {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: repeating-conic-gradient(from 0deg, #1c325e 0deg 1deg, transparent 1deg 3deg);
+  opacity: 0.7;
+  box-shadow: 0 0 50px rgba(74, 119, 255, 0.6) inset;
+}
+
+/* Roman Numerals Positioning */
+.roman-numeral-holder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0 0;
+  z-index: 3;
+}
+
+.roman-numeral-text {
+  display: block;
+  position: absolute;
+  top: 5%; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Times New Roman', serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #c9e0ff;
+  text-shadow: 
+    0 0 5px #0088ff,
+    0 0 10px #0088ff,
+    0 0 20px #0088ff,
+    0 0 40px #0055aa;
+  transform: translateZ(10px) rotateY(0deg) !important; 
+}
+
+/* Clock Hands Styling */
+.hand {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform-origin: bottom center;
+  border-radius: 2px;
+  z-index: 4;
+  pointer-events: none;
+  background: linear-gradient(to top, #e7c577, #ffffff);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateZ(20px); 
+}
+
+.hour-hand {
+  width: 6px;
+  height: 30%;
+  margin-left: -3px;
+}
+
+.minute-hand {
+  width: 4px;
+  height: 40%;
+  margin-left: -2px;
+}
+
+.second-hand {
+  width: 2px;
+  height: 45%;
+  margin-left: -1px;
+  background: #ff5050;
+  z-index: 5;
+  transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1); 
+  transform: translateZ(30px);
+}
+
+.center-cap {
+  width: 15px;
+  height: 15px;
+  background: #2b3a5b;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateZ(40px);
+  z-index: 6;
+  border: 2px solid #c9e0ff;
+}

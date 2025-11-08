@@ -1,0 +1,14 @@
+[
+  {
+    "command": "status",
+    "result": {
+      "success": true,
+      "data": {
+        "homeDir": true,
+        "backupDir": true,
+        "backupsCount": 4
+      }
+    },
+    "timestamp": "2025-11-06T06:15:41.298Z"
+  }
+]

@@ -1,0 +1,188 @@
+/* Theme Design 2 Light - Modern Light Blue */
+.theme-design2 {
+  /* Navy Blue Primary - من الصورة */
+  --primary: 216 45% 28%; /* #2C4A6B - أزرق داكن */
+  --primary-foreground: 0 0% 100%;
+  --primary-glow: 216 45% 38%;
+  
+  /* Light backgrounds - very light blue-gray */
+  --background: 220 25% 97%; /* #F5F7FA */
+  --foreground: 216 45% 20%;
+  
+  /* Card colors - pure white */
+  --card: 0 0% 100%;
+  --card-foreground: 216 45% 20%;
+  
+  /* Popover colors - white */
+  --popover: 0 0% 100%;
+  --popover-foreground: 216 45% 20%;
+  
+  /* Secondary - white/light gray */
+  --secondary: 220 20% 96%;
+  --secondary-foreground: 216 45% 20%;
+  
+  /* Muted colors */
+  --muted: 220 15% 92%;
+  --muted-foreground: 216 15% 50%;
+  
+  /* Accent colors - darker blue */
+  --accent: 216 45% 28%;
+  --accent-foreground: 0 0% 100%;
+  
+  /* Destructive colors */
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  
+  /* Border and input */
+  --border: 220 15% 88%;
+  --input: 220 15% 92%;
+  --ring: 216 45% 28%;
+  
+  /* Radius */
+  --radius: 0.625rem;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(216 45% 28%), hsl(216 45% 38%));
+  --gradient-hero: linear-gradient(180deg, hsl(216 45% 20% / 0.5), hsl(216 45% 28% / 0.7));
+  --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 10% 98%));
+  
+  /* Shadows */
+  --shadow-elegant: 0 2px 12px -2px hsl(216 45% 28% / 0.08);
+  --shadow-luxury: 0 4px 24px -4px hsl(216 45% 28% / 0.12);
+  --shadow-card: 0 1px 8px -1px hsl(220 20% 40% / 0.06);
+  
+  /* Status Colors */
+  --status-new: 210 100% 50%;
+  --status-pending: 30 100% 50%;
+  --status-confirmed: 142 71% 45%;
+  --status-cancelled: 0 84% 60%;
+}
+
+/* Theme Design 2 Dark - Modern Dark Blue */
+.theme-design2.dark {
+  /* Dark mode - deep navy background */
+  --background: 216 50% 15%; /* #1A2B4A */
+  --foreground: 0 0% 98%;
+  
+  --card: 216 45% 20%;
+  --card-foreground: 0 0% 98%;
+  
+  --popover: 216 45% 20%;
+  --popover-foreground: 0 0% 98%;
+  
+  --primary: 0 0% 100%;
+  --primary-foreground: 216 45% 20%;
+  
+  --secondary: 216 40% 25%;
+  --secondary-foreground: 0 0% 98%;
+  
+  --muted: 216 35% 22%;
+  --muted-foreground: 216 15% 70%;
+  
+  --accent: 0 0% 100%;
+  --accent-foreground: 216 45% 20%;
+  
+  --border: 216 30% 28%;
+  --input: 216 30% 25%;
+  --ring: 0 0% 100%;
+  
+  --gradient-primary: linear-gradient(135deg, hsl(216 45% 20%), hsl(216 45% 28%));
+  --gradient-hero: linear-gradient(180deg, hsl(216 50% 12%), hsl(216 50% 18%));
+}
+
+/* Theme Design 3 - Reserved for future use */
+.theme-design3 {
+  /* Will be customized later */
+}
+
+/* Admin Dashboard Design 2 - Modern Infographic Style */
+.admin-design2 {
+  /* Deep Navy Blue - من الصور */
+  --primary: 230 45% 25%; /* #1E2D4D - navy blue */
+  --primary-foreground: 0 0% 100%;
+  --primary-glow: 230 45% 35%;
+  
+  /* Purple Accent - البنفسجي من التصميم */
+  --accent: 265 85% 65%; /* #8B5CF6 - purple */
+  --accent-foreground: 0 0% 100%;
+  
+  /* Cyan/Turquoise - السماوي من التصميم */
+  --secondary: 175 85% 55%; /* #1DD3B0 - turquoise */
+  --secondary-foreground: 230 45% 15%;
+  
+  /* Light backgrounds */
+  --background: 220 25% 97%;
+  --foreground: 230 40% 15%;
+  
+  /* Card colors - white with gradient feel */
+  --card: 0 0% 100%;
+  --card-foreground: 230 40% 15%;
+  
+  /* Popover colors */
+  --popover: 0 0% 100%;
+  --popover-foreground: 230 40% 15%;
+  
+  /* Muted colors */
+  --muted: 230 20% 92%;
+  --muted-foreground: 230 20% 45%;
+  
+  /* Destructive colors */
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  
+  /* Border and input */
+  --border: 230 20% 85%;
+  --input: 230 20% 85%;
+  --ring: 230 45% 25%;
+  
+  /* Radius - rounded modern */
+  --radius: 1.25rem;
+  
+  /* Gradients - modern infographic style */
+  --gradient-primary: linear-gradient(135deg, hsl(230 45% 25%), hsl(265 85% 65%));
+  --gradient-secondary: linear-gradient(135deg, hsl(175 85% 55%), hsl(190 85% 65%));
+  --gradient-hero: linear-gradient(135deg, hsl(230 45% 25%), hsl(265 85% 65%), hsl(175 85% 55%));
+  --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(230 10% 98%));
+  
+  /* Shadows - modern elevated */
+  --shadow-elegant: 0 8px 32px -4px hsl(230 45% 25% / 0.15);
+  --shadow-luxury: 0 12px 48px -8px hsl(230 45% 25% / 0.25);
+  --shadow-card: 0 4px 16px -2px hsl(230 20% 40% / 0.1);
+  
+  /* Status Colors */
+  --status-new: 265 85% 65%;
+  --status-pending: 35 100% 55%;
+  --status-confirmed: 175 85% 55%;
+  --status-cancelled: 0 84% 60%;
+}
+
+.admin-design2.dark {
+  /* Dark mode - deep navy background */
+  --background: 230 45% 10%;
+  --foreground: 0 0% 98%;
+  
+  --card: 230 40% 15%;
+  --card-foreground: 0 0% 98%;
+  
+  --popover: 230 40% 15%;
+  --popover-foreground: 0 0% 98%;
+  
+  --primary: 230 45% 35%;
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 175 85% 45%;
+  --secondary-foreground: 0 0% 100%;
+  
+  --muted: 230 35% 20%;
+  --muted-foreground: 230 15% 70%;
+  
+  --accent: 265 85% 60%;
+  --accent-foreground: 0 0% 100%;
+  
+  --border: 230 30% 22%;
+  --input: 230 30% 22%;
+  --ring: 230 45% 35%;
+  
+  --gradient-primary: linear-gradient(135deg, hsl(230 45% 35%), hsl(265 85% 60%));
+  --gradient-hero: linear-gradient(135deg, hsl(230 45% 20%), hsl(265 85% 50%), hsl(175 85% 45%));
+}

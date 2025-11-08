@@ -1,0 +1,30 @@
+{
+  "name": "ithraa-backup-system",
+  "version": "1.0.0",
+  "description": "Automated backup system for Ithraa project",
+  "type": "module",
+  "main": "backup-automation.js",
+  "scripts": {
+    "backup:start": "node backup-system.js",
+    "backup:once": "node backup-once.js",
+    "restore": "node restore-backup.js",
+    "cpanel:upload": "node cpanel-upload.js",
+    "dev": "cd home && npm run dev",
+    "build": "cd home && npm run build",
+    "server": "node command-server.js",
+    "lovable:sync": "node lovable-sync.js",
+    "sync:bidirectional": "node sync-bidirectional.js",
+    "setup-db": "cd home && npm run setup-db"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "archiver": "^7.0.1",
+    "basic-ftp": "^5.0.5",
+    "chokidar": "^3.6.0"
+  }
+}
+
+
+
+
+
